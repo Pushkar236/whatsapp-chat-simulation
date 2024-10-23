@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ece5dd;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background-color: #075E54;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Chat Window */
+.chat-window {
+    height: 300px;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Chat Bubble */
+.chat-bubble {
+    background-color: #dcf8c6;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+/* Message Input Area */
+.message-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.message-input input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.message-input button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #25D366;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+
+.message-input button:hover {
+    background-color: #1eb354;
+}
+
+#undoMessageButton {
+    background-color: #f44336;
+}
+
+#undoMessageButton:hover {
+    background-color: #d32f2f;
+}
+
+/* Scrollbar Styling */
+.chat-window::-webkit-scrollbar {
+    width: 5px;
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 5px;
+}
